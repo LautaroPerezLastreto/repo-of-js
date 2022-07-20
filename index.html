@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Dolares</title>    
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CAMADA 30425</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure blanditiis cum quis deserunt earum.</p>
-    <script src="js/main.js"></script>
+    <header>
+    <h1>Conversor de Dolares</h1>
+    </header>
+    <main>
+<form class="formulario">
+    <p>Seleccionar a que tipo de dolar lo deseas convertir:</p>
+    <input type="radio" name="cambio" id="one">Dolar Blue
+    <input type="radio" name="cambio" id="two">Dolar Turista
+    <p>Ingrese cuanto desea abonar:</p>
+    <input type="number" id="monto" min="1" max="100000000">
+    <input type="button" id="cotizador" value="Cotizar">
+</form>
+    </main>
+    <footer>
+<p>Copyrights All rights reserved</p>
+    </footer>
+
 </body>
 </html>
