@@ -1,3 +1,103 @@
+body {
+    background: #f1f1f1;
+    transition: .3s ease all;
+}
+
+body.dark {
+    background: #111111;
+    color: #fff;
+}
+
+nav {
+    background: #343a40;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+    color: #707070;
+}
+
+body.dark nav {
+    background: #222222;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.dark nav a {
+    color: #C8C8C8;
+}
+
+body.dark nav a:hover {
+    color: #FEFEFE;
+}
+
+nav .logotipo {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+nav .enlaces {
+    display: flex;
+    align-items: center;
+}
+
+nav .enlaces a {
+    margin-right: 40px;
+    color: #707070;
+}
+
+nav .enlaces a:hover {
+    color: #707070;
+}
+
+.switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+    background: orange;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
 .item {
     border: 2px solid #000;
     padding: 10px;
@@ -28,7 +128,6 @@
     margin: 0;
 }
 
-
 .shopping-cart-items {
     padding: 20px 0px;
 }
@@ -54,58 +153,53 @@
     min-height: 96px;
 }
 
-
-.enecerrar{
-    display: flex;
-    justify-content: left;
-}
 .form-register {
     width: 400px;
     background: #24303c;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     border-radius: 4px;
-    font-family: 'calibri';
+    font-family: "calibri";
     color: white;
     box-shadow: 7px 13px 37px #000;
-  }
-  
-  .form-register h4 {
+}
+
+.form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
-  }
-  
-  .controls {
+}
+
+.controls {
     width: 100%;
     background: #24303c;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
-    font-family: 'calibri';
+    font-family: "calibri";
     font-size: 18px;
     color: white;
-  }
-  
-  .form-register p {
+}
+
+.form-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
-  }
-  
-  .form-register a {
+}
+
+.form-register a {
     color: white;
     text-decoration: none;
-  }
-  
-  .form-register a:hover {
+}
+
+.form-register a:hover {
     color: white;
     text-decoration: underline;
-  }
-  
-  .form-register .botons {
+}
+
+.form-register .botons {
     width: 100%;
     background: #1f53c5;
     border: none;
@@ -113,4 +207,4 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
-  }
+}
