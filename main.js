@@ -149,3 +149,21 @@ function comprarButtonClicked() {
     shoppingCartItemsContainer.innerHTML = "";
     updateShoppingCartTotal();
 }
+
+const showAlert = () =>{
+    Swal.fire ({
+        icon: 'success',
+        title: '<p class = "title-alert">Gracias por su compra</p>',
+        text: 'Pronto recibira su pedido!',
+        toast: true,
+        position: 'top',
+        padding: '2rem',
+        showConfirmButton: false,
+        showCloseButton: true,
+        closeButtonAriaLabel:'Cerrar alerta',
+        customClass: {
+            closeButton: 'closeButton-class'
+        },
+        background: '#000'
+    })
+}
