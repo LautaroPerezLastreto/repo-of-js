@@ -8,12 +8,11 @@ async function red() {
     for (let i = 0; i < myArray.length; i++) {
         htmlAux =
         htmlAux +
-        `<div onclick= "clickEnRed(${myArray[i].id})">
-        <h3>${myArray[i].name}</h3>
-        <a href = "${myArray[i].url}">${myArray[i].url}</a>
+        `<div class = "red" onclick= "clickEnRed(${myArray[i].id})">
+        <a class="link-red" target= "_blank" href = "${myArray[i].url}"><h3>${myArray[i].name}</h3></a>
         </div>`;
     }
-    document.getElementsByClassName('redes').innerHTML = htmlAux;
+    document.getElementsByClassName('redes')[0].innerHTML = htmlAux;
     console.log(htmlAux);
 } 
 

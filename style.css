@@ -274,3 +274,15 @@ nav .enlaces a:hover {
     cursor: pointer;
     font-weight: 400;
 }
+
+.red{
+text-align: center;
+margin-top: .5em;
+color: #111111;
+}
+.link-red{
+    text-decoration: none;
+}
+.link-red:hover{
+    color: #343a40;
+}
